@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="RegressionSuite" >
+  <test name="MyAccount Feature"  >
+    <classes>
+       <class name="com.absoft.tests.MyAccountPageTest" /> 
+    </classes>
+  </test>
+    <test name="HomePage Feature"  >
+    <classes>
+       <class name="com.absoft.tests.HomePageTest" /> 
+    </classes>
+  </test>
+  <test name="FirefoxTest">
+		<parameter name="browser" value="Firefox"></parameter>
+		<classes>
+			<class name="com.absoft.tests.ShopPageTest" />
+		</classes>
+	</test>
+
+	<test name="EdgeTest">
+		<parameter name="browser" value="Edge"></parameter>
+		<classes>
+			<class name="com.absoft.tests.ShopPageTest" />
+		</classes>
+	</test>
+  
+  
+</suite>

@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">RegressionSuite</th></tr>
+<tr><td><a href="#t0">MyAccount Feature</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">92,363</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">HomePage Feature</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">31,800</td><td></td><td></td></tr>
+<tr><td><a href="#t2">FirefoxTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">23,838</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">EdgeTest</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">32,759</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num attn">3</th><th class="num">180,760</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">RegressionSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">MyAccount Feature &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.absoft.tests.MyAccountPageTest</td><td><a href="#m0">testPageTitle</a></td><td rowspan="1">1646491649648</td><td rowspan="1">1189</td></tr><tr class="failedeven"><td><a href="#m1">testSuccessfulLogin</a></td><td rowspan="1">1646491673097</td><td rowspan="1">54183</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">HomePage Feature &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.absoft.tests.HomePageTest</td><td><a href="#m2">testPageTitle</a></td><td rowspan="1">1646491760290</td><td rowspan="1">26</td></tr><tr><th colspan="4">HomePage Feature &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.absoft.tests.HomePageTest</td><td><a href="#m3">testHomePageLink1</a></td><td rowspan="1">1646491744313</td><td rowspan="1">6</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">FirefoxTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.absoft.tests.ShopPageTest</td><td><a href="#m4">testApplyingSortOrder</a></td><td rowspan="1">1646491774878</td><td rowspan="1">3206</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">EdgeTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.absoft.tests.ShopPageTest</td><td><a href="#m5">testApplyingSortOrder</a></td><td rowspan="1">1646491813235</td><td rowspan="1">3622</td></tr></tbody>
+</table>
+<h2>MyAccount Feature</h2><h3 id="m0">com.absoft.tests.MyAccountPageTest#testPageTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: ERROR: Page Title is NOT Correct expected [My Account | ABSoft Trainings – E-Commerce test web site] but found [My Account | MeritPros Test1 Site | E-Commerce Test Web Site for MeritPros Students]
+	at com.absoft.tests.MyAccountPageTest.testPageTitle(MyAccountPageTest.java:34)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.absoft.tests.MyAccountPageTest#testSuccessfulLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>testuser5</td><td>testpwd5_FAIL</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#user_info&quot;}
+  (Session info: chrome=99.0.4844.51)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;OLADELE&apos;, ip: &apos;192.168.153.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;11.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Julius\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62508}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2287fa9ff0aa9345351f6b8534c535fe
+*** Element info: {Using=id, value=user_info}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy16.getText(Unknown Source)
+	at com.absoft.pages.MyAccountPage.isLoginSuccessfulFor(MyAccountPage.java:64)
+	at com.absoft.tests.MyAccountPageTest.testSuccessfulLogin(MyAccountPageTest.java:46)
+... Removed 29 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>HomePage Feature</h2><h3 id="m2">com.absoft.tests.HomePageTest#testPageTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: ERROR: Page Title is NOT Correct expected [ABSoft Trainings – E-Commerce test web site | Home Page] but found [MeritPros Test1 Site | E-Commerce Test Web Site for MeritPros Students | Home Page]
+	at com.absoft.tests.HomePageTest.testPageTitle(HomePageTest.java:25)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.absoft.tests.HomePageTest#testHomePageLink1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>FirefoxTest</h2><h3 id="m4">com.absoft.tests.ShopPageTest#testApplyingSortOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Sort by average rating</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>EdgeTest</h2><h3 id="m5">com.absoft.tests.ShopPageTest#testApplyingSortOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Sort by average rating</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RegressionSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="MyAccount Feature(failed)">
+    <classes>
+      <class name="com.absoft.tests.MyAccountPageTest">
+        <methods>
+          <include name="testSuccessfulLogin" invocation-numbers="0"/>
+          <include name="testCleanUp"/>
+          <include name="extentReportAfterMethod"/>
+          <include name="testPageTitle"/>
+          <include name="beforeSuite"/>
+          <include name="testSetup"/>
+          <include name="extentReportBeforeClass"/>
+          <include name="extentReportBeforeMethod"/>
+        </methods>
+      </class> <!-- com.absoft.tests.MyAccountPageTest -->
+    </classes>
+  </test> <!-- MyAccount Feature(failed) -->
+  <test thread-count="5" name="HomePage Feature(failed)">
+    <classes>
+      <class name="com.absoft.tests.HomePageTest">
+        <methods>
+          <include name="testPageTitle"/>
+          <include name="testCleanUp"/>
+          <include name="extentReportAfterMethod"/>
+          <include name="beforeSuite"/>
+          <include name="testSetup"/>
+          <include name="extentReportBeforeClass"/>
+          <include name="extentReportBeforeMethod"/>
+        </methods>
+      </class> <!-- com.absoft.tests.HomePageTest -->
+    </classes>
+  </test> <!-- HomePage Feature(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->
